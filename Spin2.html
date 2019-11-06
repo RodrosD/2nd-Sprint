@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <script>
-            var nombres=["Aliona","Belén","Daniel","Diana","Elena","Erick","Ernesto","Esther","Gema","Hanna","Jaime","Yoana","Juana","Karen","Lali","Maelly","Magda","María","Marilyn","Rodri","Santiago","Victor","Yeison","Yesid"]
-            var randomItem = nombres[Math.floor(Math.random()*nombres.length)];
-            document.body.innerHTML = randomItem;
-            <button type = 'button' onclick = "alert('Hizo clic en el botón');">Generar nombre</button>
-        </script>
+<head>
+    <meta charset="UTF-8">
+    <title>Ruleta</title>
+</head>
+<body>
+    <script>
+        var listado = ["Maria", "Santi", "Johana", "Aliona", "Laura", "Diana", "Jason", "Rodri", "Hanna", "Gemma", "Erik", "Dani", "Jaime", "Belén", "Marilyn", "Karen", "Maelly", "Ernesto", "Elena", "Yesid", "Magda", "Juana", "Victor", "Esther"]
+        var resultado = new Array (24);
 
-    </body>
+        alert("Pulse para girar la ruleta");
+
+        for(i=0; i<listado.length; i++){         
+            var ok = false;
+            while(!ok ){
+                var iValor = Math.round(Math.random()* (24));
+                alert("iValor " +iValor);
+                var sValor = listado[iValor];
+                alert("sValor "+ sValor);
+
+                alert("resultado "+ resultado[iValor]);
+
+                if(resultado[iValor]==null){
+                    ok=true;
+                    resultado[iValor]= sValor;
+
+                    alert("Le ha tocado a: " + resultado[iValor] + " pulse para continuar");
+                }
+            }
+        }
+        
+    </script>
+
+</body> 
+
 </html>
