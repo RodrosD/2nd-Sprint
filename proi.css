@@ -1,0 +1,13 @@
+
+#canvas {
+width: 540px; height: 540px;
+}
+#demo {
+    background-color: #5e5879;
+box-shadow:  0px 0px 0px 1px rgba(0, 27, 115, 0.4); 
+}
+  
+#demo2 {
+    background-color: #215aaf;
+    box-shadow:  0px 0px 0px 1px rgba(12, 51, 180, 0.4); 
+}
