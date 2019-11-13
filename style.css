@@ -5,17 +5,19 @@
 }
 
 body{
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 330vh;
 }
 
-h2{
+.titulo{ 
+    font-family:Helvetica, Arial, sans-serif;
     text-align: center;
     font-size: 40px;
     font-family: arial;
     margin-top: 80px;
-    color: purple;
+    color: red;
     text-shadow: 0px 0px 6px black;
 }
 
@@ -36,21 +38,22 @@ h2{
 
 
 .content-carrousel figure{
+    font-family: Helvetica, Arial, sans-serif;
     padding-top: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: pink;
+    background-color: grey;
     width: 100%;
     height: 180px;
     position: absolute;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 8px 0px red;
     transition: all 300ms;
     
 }
 
 .content-carrousel figure:hover{
-    box-shadow: 0px 0px 0px 0px black;
+    box-shadow: 0px 0px 2px 0px red;
     transition: all 300ms;
 }
 
@@ -87,7 +90,7 @@ h2{
 .alumn:hover{
     transform: scale(1.1);
     transition: all 300ms;
-    cursor: pointer;
+    cursor: default;
 }
 
 
@@ -98,6 +101,7 @@ h2{
         transform: rotateY(345deg);
     }
 }
+
 @keyframes rotarBelen{
     from{
         transform: rotateY(0deg);
@@ -105,6 +109,7 @@ h2{
         transform: rotateY(330deg);
     }
 }
+
 @keyframes rotarDaniel{
     from{
         transform: rotateY(0deg);
@@ -112,6 +117,7 @@ h2{
         transform: rotateY(315deg);
     }
 }
+
 @keyframes rotarDiana{
     from{
         transform: rotateY(0deg);
@@ -119,6 +125,7 @@ h2{
         transform: rotateY(300deg);
     }
 }
+
 @keyframes rotarElena{
     from{
         transform: rotateY(0deg);
@@ -126,6 +133,7 @@ h2{
         transform: rotateY(285deg);
     }
 }
+
 @keyframes rotarErick{
     from{
         transform: rotateY(0deg);
@@ -133,6 +141,7 @@ h2{
         transform: rotateY(270deg);
     }
 }
+
 @keyframes rotarErnesto{
     from{
         transform: rotateY(0deg);
@@ -140,6 +149,7 @@ h2{
         transform: rotateY(255deg);
     }
 }
+
 @keyframes rotarEsther{
     from{
         transform: rotateY(0deg);
@@ -147,6 +157,7 @@ h2{
         transform: rotateY(240deg);
     }
 }
+
 @keyframes rotarGema{
     from{
         transform: rotateY(0deg);
@@ -154,6 +165,7 @@ h2{
         transform: rotateY(225deg);
     }
 }
+
 @keyframes rotarHanna{
     from{
         transform: rotateY(0deg);
@@ -161,6 +173,7 @@ h2{
         transform: rotateY(210deg);
     }
 }
+
 @keyframes rotarJaime{
     from{
         transform: rotateY(0deg);
@@ -168,6 +181,7 @@ h2{
         transform: rotateY(195deg);
     }
 }
+
 @keyframes rotarJoana{
     from{
         transform: rotateY(0deg);
@@ -175,6 +189,7 @@ h2{
         transform: rotateY(540deg);
     }
 }
+
 @keyframes rotarJuana{
     from{
         transform: rotateY(0deg);
@@ -182,6 +197,7 @@ h2{
         transform: rotateY(525deg);
     }
 }
+
 @keyframes rotarKaren{
     from{
         transform: rotateY(0deg);
@@ -189,6 +205,7 @@ h2{
         transform: rotateY(510deg);
     }
 }
+
 @keyframes rotarLali{
     from{
         transform: rotateY(0deg);
@@ -196,6 +213,7 @@ h2{
         transform: rotateY(495deg);
     }
 }
+
 @keyframes rotarMaelly{
     from{
         transform: rotateY(0deg);
@@ -203,6 +221,7 @@ h2{
         transform: rotateY(480deg);
     }
 }
+
 @keyframes rotarMagda{
     from{
         transform: rotateY(0deg);
@@ -210,19 +229,23 @@ h2{
         transform: rotateY(465deg);
     }
 }
+
 @keyframes rotarMaria{
     from{
         transform: rotateY(0deg);
     }to{
         transform: rotateY(450deg);
     }
-}@keyframes rotarMarilyn{
+}
+
+@keyframes rotarMarilyn{
     from{
         transform: rotateY(0deg);
     }to{
         transform: rotateY(435deg);
     }
 }
+
 @keyframes rotarRodri{
     from{
         transform: rotateY(0deg);
@@ -230,6 +253,7 @@ h2{
         transform: rotateY(420deg);
     }
 }
+
 @keyframes rotarSantiago{
     from{
         transform: rotateY(0deg);
@@ -237,6 +261,7 @@ h2{
         transform: rotateY(405deg);
     }
 }
+
 @keyframes rotarVictor{
     from{
         transform: rotateY(0deg);
@@ -244,6 +269,7 @@ h2{
         transform: rotateY(390deg);
     }
 }
+
 @keyframes rotarYeison{
     from{
         transform: rotateY(0deg);
@@ -251,6 +277,7 @@ h2{
         transform: rotateY(375deg);
     }
 }
+
 @keyframes rotarYesid{
     from{
         transform: rotateY(0deg);
@@ -258,8 +285,50 @@ h2{
         transform: rotateY(360deg);
     }
 }
+
+.spin{
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    height: 60px;
+    width: 100px;
+    border-color: grey;
+    border: 2px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 12px 0px red;
+    background-color: grey;
+    transition: all 300ms;
+}
+
+.spin:hover{
+    transform: scale(1.1);
+    transition: all 300ms;
+    cursor: pointer;
+}
+.reset{
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    height: 45px;
+    width: 70px;
+    border-color: red;
+    border: 2px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 12px 0px red;
+    background-color: red;
+    transition: all 300ms;
+}
+.reset:hover{
+    transform: scale(1.1);
+    transition: all 300ms;
+    cursor: pointer;
+}
 #resultado{
-    margin-top: 400px;
+    position: absolute;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: red;
+    margin-top: 300px;
     width: 100%;
     display: flex;
     align-items: center;
